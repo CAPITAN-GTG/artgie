@@ -1,0 +1,176 @@
+export interface Product {
+  id: number;
+  name: string;
+  description: string;
+  price: number;
+  category: string;
+  size: string;
+  material: string;
+  sides: 'Single' | 'Double';
+  image: string;
+  inStock: boolean;
+}
+
+export const sizes = ['96x48', '48x32', '48x48', '48x24', '24x18'];
+export const materials = ['Corroplast', 'Metal'];
+
+export const products: Product[] = [
+  {
+    id: 1,
+    name: "Business Sign - Large",
+    description: "Professional storefront sign with your business name and logo. Perfect for retail stores and offices.",
+    price: 299.99,
+    category: "Business",
+    size: "96x48",
+    material: "Metal",
+    sides: "Single",
+    image: "📋",
+    inStock: true,
+  },
+  {
+    id: 2,
+    name: "Real Estate Sign",
+    description: "Professional yard sign for property listings. Weather-resistant and durable.",
+    price: 129.99,
+    category: "Real Estate",
+    size: "48x32",
+    material: "Corroplast",
+    sides: "Double",
+    image: "🏡",
+    inStock: true,
+  },
+  {
+    id: 3,
+    name: "Square Business Sign",
+    description: "Eye-catching square sign perfect for logos and branding. Versatile mounting options.",
+    price: 189.99,
+    category: "Business",
+    size: "48x48",
+    material: "Metal",
+    sides: "Single",
+    image: "⬜",
+    inStock: true,
+  },
+  {
+    id: 4,
+    name: "Parking Sign",
+    description: "Durable parking sign for reserved spaces. Rust-resistant and weather-proof.",
+    price: 89.99,
+    category: "Parking",
+    size: "48x24",
+    material: "Metal",
+    sides: "Single",
+    image: "🅿️",
+    inStock: true,
+  },
+  {
+    id: 5,
+    name: "Safety Warning Sign",
+    description: "High visibility safety signs for workplace hazards. Professional grade quality.",
+    price: 64.99,
+    category: "Safety",
+    size: "24x18",
+    material: "Corroplast",
+    sides: "Single",
+    image: "⚠️",
+    inStock: true,
+  },
+  {
+    id: 6,
+    name: "Directional Arrow Sign",
+    description: "Clear directional signage for parking lots, events, or buildings.",
+    price: 54.99,
+    category: "Directional",
+    size: "48x24",
+    material: "Corroplast",
+    sides: "Single",
+    image: "➡️",
+    inStock: true,
+  },
+  {
+    id: 7,
+    name: "Sidewalk A-Frame Sign",
+    description: "Double-sided sandwich board for sidewalk advertising. Weather-resistant corroplast.",
+    price: 159.99,
+    category: "Outdoor",
+    size: "48x32",
+    material: "Corroplast",
+    sides: "Double",
+    image: "📍",
+    inStock: true,
+  },
+  {
+    id: 8,
+    name: "Event Sign - Large",
+    description: "Large format sign perfect for events, conferences, and special occasions.",
+    price: 249.99,
+    category: "Event",
+    size: "96x48",
+    material: "Corroplast",
+    sides: "Single",
+    image: "🎪",
+    inStock: false,
+  },
+  {
+    id: 9,
+    name: "Promotional Sign",
+    description: "Attention-grabbing promotional sign for sales and special offers.",
+    price: 99.99,
+    category: "Promotional",
+    size: "48x32",
+    material: "Corroplast",
+    sides: "Double",
+    image: "💰",
+    inStock: true,
+  },
+  {
+    id: 10,
+    name: "Construction Site Sign",
+    description: "Heavy-duty metal sign for construction sites and industrial use.",
+    price: 179.99,
+    category: "Construction",
+    size: "48x48",
+    material: "Metal",
+    sides: "Single",
+    image: "🚧",
+    inStock: true,
+  },
+  {
+    id: 11,
+    name: "Store Hours Sign",
+    description: "Professional sign displaying business hours. Customizable for your schedule.",
+    price: 74.99,
+    category: "Business",
+    size: "24x18",
+    material: "Metal",
+    sides: "Single",
+    image: "🕐",
+    inStock: true,
+  },
+  {
+    id: 12,
+    name: "Yard Sign Bundle",
+    description: "Set of 3 double-sided corroplast signs. Perfect for events and campaigns.",
+    price: 119.99,
+    category: "Outdoor",
+    size: "24x18",
+    material: "Corroplast",
+    sides: "Double",
+    image: "📢",
+    inStock: true,
+  },
+];
+
+export const categories = [
+  "All",
+  "Business",
+  "Real Estate",
+  "Parking",
+  "Safety",
+  "Directional",
+  "Outdoor",
+  "Event",
+  "Promotional",
+  "Construction",
+];
+
